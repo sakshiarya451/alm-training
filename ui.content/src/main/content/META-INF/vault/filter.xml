@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/learning/settings/wcm/templates/page-content" mode="replace"/>
+    <filter root="/conf/learning" mode="update"/>
+    <filter root="/content/learning" mode="update"/>
+    <filter root="/content/ibm-internal" mode="merge"/>
+    <filter root="/content/ibm-training" mode="merge"/>
+    <filter root="/content/ibm-startatibm" mode="merge"/>
+    <filter root="/content/ibm-skillbuild-adult" mode="merge"/>
+    <filter root="/content/ibm-skillbuild-highschool" mode="merge"/>
+    <filter root="/content/experience-fragments/learning" mode="replace"/>
+    <filter root="/content/dam/learning" mode="update"/>
+</workspaceFilter>

@@ -1,0 +1,7 @@
+{
+  "allow.hosts": [
+    "adobe-qa.alm.ibm.com",
+    "acceptance.alm.ibm.com",
+    "alm.ibm.com"
+  ]
+}

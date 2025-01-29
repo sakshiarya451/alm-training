@@ -1,0 +1,16 @@
+/* margins */
+m-0 {
+    margin: 0px;
+}
+
+a {
+    color: var(--prime-link-primary-color,#0f62fe);
+}
+
+.link-primary {
+    color: var(--prime-link-primary-color, #0f62fe);
+}
+
+span.cds--tabs__nav-item-label {
+    color: var(--prime-color-black);
+}

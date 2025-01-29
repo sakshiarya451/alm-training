@@ -1,0 +1,84 @@
+#
+# This file contains the rewrite rules, and can be customized.
+#
+# By default, it includes just the rewrite rules. You can
+# add rewrite rules to this file but you should still include
+# the default rewrite rules.
+
+Include conf.d/rewrites/default_rewrite.rules
+
+RewriteRule ^/favicon.ico$ /content/dam/learning/site/favicon.ico [NC,PT]
+
+# Define redirection based on accountid
+RewriteCond %{QUERY_STRING} ^accountid=10738&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://adobe-qa.alm.ibm.com/ibm-internal/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10768&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://adobe-qa.alm.ibm.com/ibm-training/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10771&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://adobe-qa.alm.ibm.com/ibm-skillsbuildadult/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10770&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://adobe-qa.alm.ibm.com/ibm-skillsbuildhighschool/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10813&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://acceptance.alm.ibm.com/ibm-internal/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10814&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://acceptance.alm.ibm.com/ibm-training/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10816&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://acceptance.alm.ibm.com/ibm-skillsbuildadult/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=10815&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://acceptance.alm.ibm.com/ibm-skillsbuildhighschool/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=2133&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://alm.ibm.com/ibm-internal/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=2136&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://alm.ibm.com/ibm-training/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=2135&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://alm.ibm.com/ibm-skillsbuildadult/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+RewriteCond %{QUERY_STRING} ^accountid=2134&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteRule ^/training\.html$ https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
+
+
+
+# rewrite for root redirect
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^/?$ /content/learning/us/en/home.html [R=301,L]
+
+RewriteRule ^/ibm-internal(.*)$  /content/ibm-internal/us/en/overview.html/$1 [PT,L]
+RewriteRule ^/ibm-training(.*)$  /content/ibm-training/us/en/overview.html/$1 [PT,L]
+RewriteRule ^/ibm-skillsbuildhighschool(.*)$  /content/ibm-skillbuild-highschool/us/en/overview.html/$1 [PT,L]
+RewriteRule ^/ibm-skillsbuildadult(.*)$  /content/ibm-skillbuild-adult/us/en/overview.html/$1 [PT,L]
+RewriteRule ^/ibm-startatibm(.*)$  /content/ibm-startatibm/us/en/overview.html/$1 [PT,L]
+
+
+
+
+
+
+
+
+
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} !^/conf/(.+\.jpe?g|.+\.png|.+\.svg)$
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg)$
+#RewriteCond %{REQUEST_URI} !^/favicon
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/conf/learning/settings/wcm/templates/(?!xf-).*"
+        cq:conf="/conf/ibm-internal"
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2024-08-22T05:32:08.164Z"
+        cq:lastModifiedBy="Rohit.Negi1@ibm.com"
+        cq:lastReplicated="{Date}2024-08-22T05:34:01.173Z"
+        cq:lastReplicated_publish="{Date}2024-08-22T05:34:01.173Z"
+        cq:lastReplicatedBy="Rohit.Negi1@ibm.com"
+        cq:lastReplicatedBy_publish="Rohit.Negi1@ibm.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="IBM Internal"
+        jcr:uuid="9f1f223c-8d31-43c1-8f39-4cfac7e6be9e"
+        sling:redirect="true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="foundation/components/redirect"
+        redirectTarget="/content/yourlearning/language-masters/en/home">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <language-masters/>
+    <us/>
+</jcr:root>

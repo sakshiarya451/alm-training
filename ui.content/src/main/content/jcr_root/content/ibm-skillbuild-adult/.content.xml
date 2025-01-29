@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/conf/learning/settings/wcm/templates/(?!xf-).*"
+        cq:conf="/conf/ibm-skillsbuild-adult"
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:isDelivered="{Boolean}false"
+        cq:lastModified="{Date}2024-08-22T07:36:08.753Z"
+        cq:lastModifiedBy="Rohit.Negi1@ibm.com"
+        cq:lastReplicated="{Date}2024-08-22T07:36:18.420Z"
+        cq:lastReplicated_publish="{Date}2024-08-22T07:36:18.420Z"
+        cq:lastReplicatedBy="Rohit.Negi1@ibm.com"
+        cq:lastReplicatedBy_publish="Rohit.Negi1@ibm.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus2,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="IBM SkillBuild Adult"
+        jcr:uuid="b7aeba09-4093-4b9b-b075-8c73b4ef4336"
+        sling:redirect="true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="foundation/components/redirect"
+        redirectTarget="/content/yourlearning/language-masters/en/home">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <language-masters/>
+    <us/>
+</jcr:root>

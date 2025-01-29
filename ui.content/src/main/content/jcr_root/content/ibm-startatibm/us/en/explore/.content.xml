@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+    <jcr:content cq:lastModified="{Date}2024-09-03T06:59:01.898Z" cq:lastModifiedBy="Rohit.Negi1@ibm.com" cq:lastRolledout="{Date}2024-09-03T06:59:01.901Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" cq:template="/conf/learning/settings/wcm/templates/page-content1" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="cq:PageContent" jcr:title="Explore" sling:resourceType="learning/components/page" id="learning-body">
+        <root cq:lastRolledout="{Date}2024-09-03T06:59:01.836Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/container" layout="responsiveGrid">
+            <container cq:lastRolledout="{Date}2024-09-03T06:59:01.845Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/container" layout="responsiveGrid">
+                <title cq:lastRolledout="{Date}2024-09-03T06:59:01.849Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/title"/>
+                <container cq:lastRolledout="{Date}2024-09-03T06:59:01.858Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/container" id="catalog-page-container" layout="responsiveGrid">
+                    <container cq:lastRolledout="{Date}2024-09-03T06:59:01.869Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:created="{Date}2022-03-13T09:06:43.604+05:30" jcr:createdBy="admin" jcr:lastModified="{Date}2024-09-03T06:59:01.861Z" jcr:lastModifiedBy="admin" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/container" id="explore-button-cont" layout="simple">
+                        <button cq:lastRolledout="{Date}2024-09-03T06:59:01.876Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:created="{Date}2022-03-13T09:06:49.136+05:30" jcr:createdBy="admin" jcr:lastModified="{Date}2024-09-03T06:59:01.872Z" jcr:lastModifiedBy="admin" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" jcr:title="Your Learning" sling:resourceType="learning/components/button" link="/content/ibm-startatibm/us/en/learning" linkTarget="_self" linkURL="/content/ibm-startatibm/us/en/learning">
+                            <cq:responsive cq:lastRolledout="{Date}2024-09-03T06:59:01.878Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured">
+                                <default cq:lastRolledout="{Date}2024-09-03T06:59:01.882Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" offset="0" width="2"/>
+                            </cq:responsive>
+                        </button>
+                        <button_1592700944 cq:lastRolledout="{Date}2024-09-03T06:59:01.886Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:created="{Date}2022-03-13T09:06:56.739+05:30" jcr:createdBy="admin" jcr:lastModified="{Date}2024-09-03T06:59:01.884Z" jcr:lastModifiedBy="admin" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" jcr:title="Explore" sling:resourceType="learning/components/button">
+                            <cq:responsive cq:lastRolledout="{Date}2024-09-03T06:59:01.889Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured">
+                                <default cq:lastRolledout="{Date}2024-09-03T06:59:01.892Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" offset="0" width="2"/>
+                            </cq:responsive>
+                        </button_1592700944>
+                    </container>
+                    <catalog cq:lastRolledout="{Date}2024-09-03T06:59:01.900Z" cq:lastRolledoutBy="Rohit.Negi1@ibm.com" jcr:created="{Date}2022-03-07T17:05:44.833+05:30" jcr:createdBy="admin" jcr:lastModified="{Date}2024-09-03T06:59:01.897Z" jcr:lastModifiedBy="admin" jcr:mixinTypes="[cq:LiveRelationship]" jcr:primaryType="nt:unstructured" sling:resourceType="learning/components/catalog" citiesFilter="false" durationFilter="true" formatFilter="true" priceFilter="false" showCatalogFilter="true" showFilters="true" showSearch="true" skillsFilter="true" skillsLevelFilter="true" statusFilter="false" typeFilter="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

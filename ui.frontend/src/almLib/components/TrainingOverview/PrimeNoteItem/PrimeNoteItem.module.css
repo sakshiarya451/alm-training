@@ -1,0 +1,151 @@
+.noteMarkerContainer{
+    font-size: var(--prime-font-size-14);
+    color: var(--prime-color-nc3);
+    width: 100%;
+    margin-top: 10px;
+    font-family: var(--prime-font-family);
+}
+.noteContentWithoutMarker{
+    word-wrap: break-word;
+    color: var(--prime-color-nc3);
+    font-size: var(--prime-font-size-14);
+    padding-bottom: 10px;
+    display: flex;
+    font-family: var(--prime-font-family);
+}
+.icon,
+.noteIcon {
+  margin-right: 5px;
+}
+.icon svg,
+.noteIcon svg {
+    stroke: var(--prime-icon-color);
+    text-align: center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+    fill: var(--prime-icon-color);
+}
+.noteIcon {
+    margin-top: 10px;
+}
+.markerText{
+    color: var(--prime-color-primary);
+    cursor: pointer;
+}
+.noteContent{
+    word-wrap: break-word;
+    color: var(--prime-color-nc3);
+    font-size: var(--prime-font-size-14);
+    padding-bottom: 10px;
+    [dir=rtl] & {
+        margin-right: 45px;
+        padding-left: 15px;
+    }
+    [dir=ltr] & {
+        margin-left: 45px;
+        padding-right: 15px;
+    }
+}
+.noteTextWithoutMarker{
+    color: var(--prime-color-nc3);
+    font-size: var(--prime-font-size-14);
+    margin-top:10px;
+}
+.noteSeperatorDiv{
+    width: 100%;
+}
+.noteSeperatorLine{
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid var(--prime-color-nc2);
+}
+.noteEditContent{
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 60px);
+    padding: 5px;
+    resize: none;
+    [dir=rtl] & {
+        right: 45px;
+    }
+    [dir=ltr] & {
+        left: 45px;
+    }
+}
+.noteEditContentWithoutMarker{
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 96%;
+    padding: 5px;
+    resize: none;
+}
+.noteControlActions{
+    position: relative;
+    height: 40px;
+    padding-bottom: 10px;
+}
+.noteControlActionsWithoutMarker{
+    position: relative;
+}
+.actionButton{
+    text-align: center;
+    color: var(--prime-color-nc3);
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5rem;
+    display: block;
+    font-size: var(--prime-font-size-14);
+    font-weight: var(--prime-font-weight-400);
+    min-height: 30px;
+    border: 0.1rem solid var(--prime-color-nc4);
+    background-color: transparent;
+    [dir=rtl] & {
+        float: left;
+        margin-left: 30px;
+    }
+    [dir=ltr] & {
+        float: right;
+        margin-right: 30px;
+    }
+}
+
+.actionButton:last-child {
+    [dir=rtl] & {
+        margin-left: 15px;
+    }
+    [dir=ltr] & {
+        margin-right: 15px;
+    }
+}
+
+.actionButton:hover,
+.actionButton:focus,
+.actionButton:focus-visible {
+    background: var(--prime-color-nc2);
+}
+.noteContainerWithoutMarker{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .actionButton {
+        [dir=rtl] & {
+            margin-left: 15px;
+        }
+        [dir=ltr] & {
+            margin-right: 15px;
+        }
+    }
+}

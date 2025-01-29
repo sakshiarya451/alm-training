@@ -1,0 +1,46 @@
+#
+# This file contains the filter ACL, and can be customized.
+#
+# By default, it includes the default filter ACL.
+#
+
+$include "./default_filters.any"
+
+
+# Allow components JSON model
+/0101 { /type "allow" /extension "json" /selectors "model" /path "/content/*" }
+
+# Allow manifest.webmanifest files located in the content
+/0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# Allow Access Token servlet
+/0104 { /type "allow" /method "POST" /extension "html" /selectors "cpAccessToken" /path "/cpoauth"}
+
+# Allow Commerce Access Token servlet
+/0105 { /type "allow" /method "GET" /extension "html" /selectors "commerceToken" /path "/cpoauth"}
+
+# Allow ALM Login Token servlet
+/0106 { /type "allow" /method "POST" /extension "html" /selectors "almLogin" /path "/cpoauth"}
+
+# Allow ALM Logout Token servlet
+/0107 { /type "allow" /method "POST" /extension "html" /selectors "almLogout" /path "/cpoauth"}
+
+# Allow Commerce Login Token servlet
+/0108 { /type "allow" /method "POST" /extension "html" /selectors "almCommerceLogin" /path "/cpoauth"}
+
+# Allow Admin RT to Learner Login Token servlet
+/0109 { /type "allow" /method "POST" /extension "html" /selectors "adminRefreshToken" /path "/cpoauth"}
+
+/0110  { /type "allow" /url "/bin/ibm/courselaunch" }
+
+/0111  { /type "allow" /url "/bin/alm/adminaccesstoken" }
+
+/0112  { /type "allow" /url "/bin/alm/validateLOResponse" }
+
+#Allow i18n dictionary JSON
+/0113 { /type "allow" /path "/libs/cq/i18n/*" /extension "json" }
+#{ /type "allow" /url "/libs/cq/i18n/dict.*.json"  }
+
+/0114 { /type "allow" /path "/content/dam/learning/site/languages/*" /extension "json"  }
+
+/0115  { /type "allow" /url "/bin/startatibm/*" }
