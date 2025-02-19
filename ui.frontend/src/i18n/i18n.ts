@@ -61,10 +61,10 @@ const LoadTranslationsPromise = (locale?: string): Promise<any> => {
   locale = locale || ENGLISH_LOCALE;
 
   const translationLocaleKey = locale.replace("-", "_");
-  // const resourcePath = GetManifestResourcePath(`${translationLocaleKey}.json`);
-  const resourcePath =
-    window.location.origin +
-    `/content/dam/learning/site/languages/${translationLocaleKey}.json`;
+  const resourcePath = GetManifestResourcePath(`${translationLocaleKey}.json`);
+  // const resourcePath =
+  //   window.location.origin +
+  //   `/content/dam/learning/site/languages/${translationLocaleKey}.json`;
   if (!resourcePath) {
     return LoadTranslationsPromise(ENGLISH_LOCALE);
   }
