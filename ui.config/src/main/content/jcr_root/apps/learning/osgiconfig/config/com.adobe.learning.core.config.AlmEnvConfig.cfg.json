@@ -3,6 +3,5 @@
   "employeeApplicationSecretSandbox": "2a0844a8-f29c-4b6f-a4c0-40efe91b93fd",
   "employeeIpIdSandbox": "7903",
   "employeeAccessKeySandbox": "9lhgrnfag3ooj",
-  "employeeRefreshTokenSandbox": "fa7d41a62ef81e0c4fd89ea56a9b5f0d",
-  "almApiBaseUrl": "https://learningmanagereu.adobe.com"
+  "employeeRefreshTokenSandbox": "fa7d41a62ef81e0c4fd89ea56a9b5f0d"
 }
