@@ -233,7 +233,7 @@ public class FetchCpAccessTokenServlet extends SlingAllMethodsServlet {
     else if (refHeader.contains("/content/ibm-performance"))
       tokenCookie.setPath("/content/ibm-performance");
     else if (refHeader.contains("/content/learning"))
-      tokenCookie.setPath("/content/learning");
+      tokenCookie.setPath("/");
     else
       tokenCookie.setPath("/learning");
 
