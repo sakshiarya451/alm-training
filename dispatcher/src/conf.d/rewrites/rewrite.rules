@@ -10,7 +10,7 @@ Include conf.d/rewrites/default_rewrite.rules
 RewriteRule ^/favicon.ico$ /content/dam/learning/site/favicon.ico [NC,PT]
 
 # Define redirection based on accountid
-RewriteCond %{QUERY_STRING} ^accountid=10738&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
+RewriteCond %{QUERY_STRING} ^accountid=121816&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]
 RewriteRule ^/training\.html$ https://adobe-qa.alm.ibm.com/ibm-internal/trainingId/%3/trainingInstanceId/%1/%2? [R=302,L]
 
 RewriteCond %{QUERY_STRING} ^accountid=10768&instanceid=([^&]+)(?:&languagecode=([^&]+))?&loid=([^&]+)$ [NC]

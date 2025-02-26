@@ -236,7 +236,7 @@ public class CourseLaunchUtils {
         String loRetiredMessage = "";
 
         switch (accountId) {
-            case "10738":
+            case "121816":
                 applicationId = almEnvConfig.getEmployeeApplicationIdSandbox();
                 applicationSecret = almEnvConfig.getEmployeeApplicationSecretSandbox();
                 ipId = almEnvConfig.getEmployeeIpIdSandbox();

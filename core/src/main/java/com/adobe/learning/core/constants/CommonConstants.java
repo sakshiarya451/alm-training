@@ -175,8 +175,8 @@ public final class CommonConstants {
         public static final String INSTANCE_EXPIRED_ERR = "Please note that the timeframe for you to complete this course has expired. Please reach out to <Author> for further guidance.";
 
         public static final String[] TRUSTED_DOMAINS = {
-                        "https://learningmanagereu.adobe.com", "https://ibmsc--staging.sandbox.my.salesforce.com",
-                        "https://test.salesforce.com", "https://learningmanagerfr.adobe.com",
+                        "https://learningmanager.adobe.com", "https://ibmsc--staging.sandbox.my.salesforce.com",
+                        "https://test.salesforce.com", "https://learningmanagereu.adobe.com",
                         "https://login.salesforce.com",
                         "https://ibmsc.my.salesforce.com", "https://us-south.appid.cloud.ibm.com",
                         "https://enterpriseprofileproxy.c8f8f055.public.multi-containers.ibm.com",

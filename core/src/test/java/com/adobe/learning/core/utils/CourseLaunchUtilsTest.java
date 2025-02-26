@@ -216,7 +216,7 @@ class CourseLaunchUtilsTest {
     @Test
     void testAccountCredential() {
         when(almEnvConfig.getEmployeeApplicationIdSandbox()).thenReturn("applicationId");
-        Map<String, String> result = CourseLaunchUtils.accountCredential("10738", almEnvConfig);
+        Map<String, String> result = CourseLaunchUtils.accountCredential("121816", almEnvConfig);
         assertFalse(result.isEmpty());
 
         when(almEnvConfig.getSkillsBuildApplicationIdSandbox()).thenReturn("applicationId");

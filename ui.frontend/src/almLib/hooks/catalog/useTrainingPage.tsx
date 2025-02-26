@@ -124,7 +124,7 @@ export const useTrainingPage = (
   var loAccessErrorMessage = "";
   var loRetiredMessage = "";
   switch (accountId) {
-    case "10738":
+    case "121816":
       loAccessErrorMessage = GetTranslation(
         "alm.courseLaunch.employeeGenericErrorMessage"
       );
