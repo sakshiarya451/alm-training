@@ -1,7 +1,5 @@
 {
   "employeeApplicationIdSandbox": "62f33554-103c-4fcb-b68c-d35c1d3da6a5",
   "employeeApplicationSecretSandbox": "1af6582a-175e-4499-82c6-c250c953f368",
-  "employeeIpIdSandbox": "7903",
-  "employeeAccessKeySandbox": "9lhgrnfag3ooj",
-  "employeeRefreshTokenSandbox": "866356274823b37210c5e01926620c44"
+  "employeeRefreshTokenSandbox": "331ec700cab057171c1af49661db2398"
 }
