@@ -899,7 +899,7 @@ const PrimeTrainingPage = (props: any) => {
             </div>
           </div>
         </div>
-        {activeExtension && extensionAppIframeUrl?.length ? (
+        {/* {activeExtension && extensionAppIframeUrl?.length ? (
           <ALMExtensionIframeDialog
             href={extensionAppIframeUrl}
             classes="extensionDialog"
@@ -912,7 +912,7 @@ const PrimeTrainingPage = (props: any) => {
           ></ALMExtensionIframeDialog>
         ) : (
           ""
-        )}
+        )} */}
       </Provider>
     </ALMErrorBoundary>
   );

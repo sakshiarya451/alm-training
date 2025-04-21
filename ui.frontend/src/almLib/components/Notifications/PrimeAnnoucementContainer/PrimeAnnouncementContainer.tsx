@@ -7,7 +7,7 @@ import {
   Provider,
   defaultTheme,
 } from "@adobe/react-spectrum";
-import { Dialog, DialogContainer } from "@react-spectrum/dialog";
+import { Dialog, DialogContainer, DialogTrigger } from "@react-spectrum/dialog";
 import { useState } from "react";
 import styles from "./PrimeAnnouncement.module.css";
 import { modifyTimeDDMMYY } from "../../../utils/dateTime";
@@ -75,7 +75,7 @@ const PrimeAnnouncementContainer: React.FC<{
 
   return (
     <Provider theme={defaultTheme}>
-      <DialogContainer
+      <DialogTrigger
         isDismissable
         full
         onDismiss={() => clickHandler()}
@@ -125,7 +125,7 @@ const PrimeAnnouncementContainer: React.FC<{
             </Content>
           </Dialog>
         )}
-      </DialogContainer>
+      </DialogTrigger>
     </Provider>
   );
 };

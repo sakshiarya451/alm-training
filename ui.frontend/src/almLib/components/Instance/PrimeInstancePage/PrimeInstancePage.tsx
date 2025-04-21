@@ -594,7 +594,7 @@ const PrimeInstancePage = () => {
             </section>
           </section>
         </div>
-        {loInstanceExtension && extensionAppIframeUrl?.length ? (
+        {/* {loInstanceExtension && extensionAppIframeUrl?.length ? (
           <ALMExtensionIframeDialog
             href={extensionAppIframeUrl}
             classes="extensionDialog"
@@ -607,7 +607,7 @@ const PrimeInstancePage = () => {
           ></ALMExtensionIframeDialog>
         ) : (
           ""
-        )}
+        )} */}
       </Provider>
     </ALMErrorBoundary>
   );

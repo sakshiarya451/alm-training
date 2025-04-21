@@ -402,7 +402,7 @@ const PrimeCourseOverview: React.FC<{
     </div>
     )}
 
-    {isPartOfLP && (
+    {/* {isPartOfLP && (
     <SpectrumTabs
       aria-label={GetTranslation("alm.text.moduleList", true)}
       UNSAFE_className={isPartOfLP ? styles.isPartOfLP : ""}
@@ -548,7 +548,7 @@ const PrimeCourseOverview: React.FC<{
         )}
       </SpectrumTabPanels>
     </SpectrumTabs>
-    )}
+    )} */}
     </>
   );
 };

@@ -135,7 +135,7 @@ const ALMExtensionIframeDialog: React.FC<{
             id="showAlert"
             UNSAFE_className={styles.primeAlertDialogButton}
           ></ActionButton>
-          <DialogContainer onDismiss={hideDialog} isDismissable={true}>
+          {/* <DialogContainer onDismiss={hideDialog} isDismissable={true}>
             <Dialog UNSAFE_className={classes}>
               <Heading>{extensionLocalizedMetadata.label}</Heading>
               <Divider />
@@ -143,7 +143,7 @@ const ALMExtensionIframeDialog: React.FC<{
                 <iframe src={href} className={styles.iframe}></iframe>
               </Content>
             </Dialog>
-          </DialogContainer>
+          </DialogContainer> */}
         </>
       )}
     </Provider>
