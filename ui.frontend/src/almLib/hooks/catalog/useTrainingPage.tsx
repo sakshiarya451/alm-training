@@ -11,6 +11,8 @@ governing permissions and limitations under the License.
 */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import axios from "axios";
+import axiosRetry from "axios-retry";
 import { useIntl } from "react-intl";
 import { useDispatch } from "react-redux";
 import { AlertType } from "../../common/Alert/AlertDialog";
@@ -60,8 +62,6 @@ import { JsonApiParse } from "../../utils/jsonAPIAdapter";
 import { LaunchPlayer } from "../../utils/playback-utils";
 import { QueryParams, RestAdapter } from "../../utils/restAdapter";
 import { GetTranslation } from "../../utils/translationService";
-import axios from "axios";
-import axiosRetry from "axios-retry";
 import { checkIsEnrolled } from "../../utils/overview";
 import { checkIfCompletionDeadlineNotPassed } from "../../utils/instance";
 
@@ -120,7 +120,7 @@ export const useTrainingPage = (
   const trainingAccounts = ["10768", "10814", "2136"];
   const preHireAccounts = ["11129", "11130", "2220"];
   const accountId = getALMConfig().accountId;
-  const [privacyAccepted, setPrivacyAccepted] = useState(false)
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   var loAccessErrorMessage = "";
   var loRetiredMessage = "";
   switch (accountId) {
@@ -1117,7 +1117,7 @@ export const useTrainingPage = (
 
   useEffect(() => {
     if (!privacyAccepted) return;
-    if (trainingInstance?.enrollment && (instanceId || trainingInstance.id)) {
+    if (trainingInstance?.id && !shouldSkipLOCalls) {
       getPlayerLoState({
         loId: trainingId,
         loInstanceId: trainingInstance.id || instanceId,

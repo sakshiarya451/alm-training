@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../ui.apps/src/main/content/jcr_root/apps/learning/components/enrolledLearningObjects"  ]
 }

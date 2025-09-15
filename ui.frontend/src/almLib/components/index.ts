@@ -58,4 +58,4 @@ export * from "./Notifications/PrimeNotificationContainer";
 export * from "./Portal";
 export * from "./TrainingOverview/PrimeTrainingPage";
 export * from "./UserProfile";
-
+export * from "./SakshiEnrolledLearningObjects";
